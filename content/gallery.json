@@ -1,0 +1,18 @@
+{
+  "title": "SZEROKI WYBÓR PALET Z PRODUKTAMI KLASY A",
+  "description": "**Lorem ipsum, dolor sit amet consectetur adipisicing elit.** Reiciendis iste consequuntur ab aperiam quo veniam omnis similique.",
+  "images": [
+    {
+      "url": "images/photos/www_04.jpg",
+      "alt": "Galeria zdjęcie 1"
+    },
+    {
+      "url": "images/photos/www_05.jpg",
+      "alt": "Galeria zdjęcie 2"
+    },
+    {
+      "url": "images/photos/www_06.png",
+      "alt": "Galeria zdjęcie 3"
+    }
+  ]
+}
