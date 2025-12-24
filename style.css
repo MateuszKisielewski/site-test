@@ -170,7 +170,7 @@ header > :not(.hero-bg){
 
 /* galery with images */
 #galery{
-  height: 30vh;
+  height: 50vh;
   width: auto;
   background-color: #ffffff;
   display: flex;
