@@ -33,13 +33,9 @@ header{
   opacity: 0;
 }
 
-header > :not(.hero-bg){
-  position: relative;
-  z-index: 1;
-}
-
 /* contact menu at the top */
 .above_menu{
+  position: relative;
   display: flex;
   gap: 1vw;
   justify-content: right;
@@ -142,7 +138,7 @@ header > :not(.hero-bg){
 
 /* text in offer*/
 .offer_text p {
-  font-size: 0.7vw;
+  font-size: 0.9rem;
   margin: 0;
   font-weight: 300;
   line-height: 1.4;
@@ -168,8 +164,8 @@ header > :not(.hero-bg){
   font-size: 1vw;
 }
 
-/* galery with images */
-#galery{
+/* gallery with images */
+#gallery{
   height: 50vh;
   width: auto;
   background-color: #ffffff;
@@ -180,23 +176,10 @@ header > :not(.hero-bg){
   align-items: center;
 }
 
-#galery img{
+#gallery img{
   /* max-width: 100%; */
   max-height: auto;
   width: 20vw;
-}
-
-/* description of galery */
-#galery_desc{
-  background-color: #ffffff;
-  height: 8vw;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  margin: 0% 20% 0% 20%;
-  padding: 3%;
-  padding-top: 0;
-  font-size: 0.7vw;
 }
 
 /* product icons */
@@ -242,8 +225,7 @@ hr{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 15%;
-  margin-left: 15%;
+  margin: 0 15%;
 }
 
 /* black bar with contact info */
@@ -357,6 +339,42 @@ hr{
   color: #009dff;
 }
 
+/* Offer site styles */
+.offer_section {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 3% 13%;
+}
+
+.offer_section p {
+  margin: 0 13%;
+}
+
+.offer_image_section {
+  height: 40vh;
+  margin: 3% 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1%;
+}
+
+.offer_image_section_picture {
+  height: 35vh;
+  width: 35vh;
+}
+
+/* contact site styles */
+#contact_section {
+  margin: 3% 10%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#contact_section p {
+  margin-top: 3%;
+}
+
 /* view for 4k monitors */
 @media (min-width: 2561px) and (max-width: 3840px){
   .above_menu {
@@ -392,20 +410,12 @@ hr{
     font-size: 0.9vw;
   }
 
-  #galery img{
+  #gallery img{
     width: 23vw;
   }
 
-  #galery{
+  #gallery{
     margin: 10vh 0 10vh 0;
-  }
-
-  #galery_desc h2{
-    font-size: 1.3vw;
-  }
-
-  #galery_desc p{
-    font-size: 0.8vw;
   }
 
   #products_pic{
@@ -433,7 +443,7 @@ hr{
 /* view for 1080px monitors */
 @media (min-width: 1850px) and (max-width: 1920px) {
   #products_desc section{
-    font-size: 0.7vw !important;
+    font-size: 0.7vw;
   }
 
   .above_menu {
@@ -444,21 +454,17 @@ hr{
     width: 23vw;
   }
 
-  #galery img{
+  #gallery img{
     width: 23vw;
   }
 
-  #galery{
+  #gallery{
     margin: 2vh 0 2vh 0;
     height: 50vh;
   }
 
   #contact{
     height: 12vh;
-  }
-
-  #brands{
-    margin: 2vw 6vw;
   }
 
   #brands img{
@@ -479,11 +485,11 @@ hr{
     width: 27vw;
   }
 
-  #galery img{
+  #gallery img{
     width: 27vw;
   }
 
-  #galery{
+  #gallery{
     margin: 2vh 0 2vh 0;
   }
 
@@ -517,7 +523,8 @@ hr{
     justify-content: flex-end;
     margin-right: 5vw;
     padding: 0.5%;
-    padding-top: 2%;
+    padding-top: 1.25%;
+    font-size: 0.9rem;
   }
 
   #menu {
@@ -615,24 +622,17 @@ hr{
     font-size: 2vw;
   }
 
-  #galery {
+  #gallery {
     flex-wrap: nowrap;
     gap: 2vw;
     padding: 1vh 3vw;
-    height: 25vh;
+    height: 32vh;
     margin: 0;
   }
 
-  #galery img {
+  #gallery img {
     width: 31vw;
     margin: 0;
-  }
-
-  #galery_desc {
-    height: auto;
-    margin: 0 10vw;
-    padding: 0 2vw 2vw 2vw;
-    font-size: 1.5vw;
   }
 
   #products_pic,
@@ -824,7 +824,7 @@ hr{
     font-size: 5vw;
   }
 
-  #galery {
+  #gallery {
     flex-wrap: nowrap;
     gap: 4vw;
     padding: 0;
@@ -832,17 +832,9 @@ hr{
     margin-bottom: 0;
   }
 
-  #galery img {
+  #gallery img {
     width: 27vw;
     margin: 0;
-  }
-
-  #galery_desc {
-    height: auto;
-    margin: 5vw;
-    padding: 0 3vw 3vw 3vw;
-    font-size: 3vw;
-    margin-top: 0;
   }
 
   #products_pic,
