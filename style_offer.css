@@ -18,19 +18,11 @@ body{
 header{
   position: relative;
   overflow: hidden;
-  height: 65vh;
-}
-
-/* banners */
-.hero-bg {
-  position: absolute;
-  inset: 0;
+  height: 40vh;
+  background-image: url('images/banner/baner_oferta.jpg'); 
+  background-size: cover; 
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  transition: opacity 1500ms ease;
-  z-index: 0;
-  opacity: 0;
 }
 
 /* contact menu at the top */
@@ -41,15 +33,16 @@ header{
   justify-content: right;
   margin-right: 8.5vw;
   padding: 0.4%;
+  color: #ffffff;
 }
 
 #menu{
   position: absolute;
   left: 0;
   right: 0;
-  top: 5%;
+  top: 8%;
   height: 4vh;
-  background-color: #009dff;
+  background-color: #4f4f4f;
   opacity: 90%;
   display: flex;
   justify-content: space-between;
@@ -70,7 +63,7 @@ header{
 }
 
 .menu_center a{
-  color: black;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 400;
   font-size: 1vw;
@@ -79,7 +72,7 @@ header{
 }
 
 .menu_center a:hover {
-  color: white;
+  color: #7d7d7d;
 }
 
 .menu_right{
@@ -93,125 +86,6 @@ header{
 .menu_right img{
   width: 1.6vw; 
   height: auto;
-}
-
-/* offer container */
-#offer{
-  height: 31.5vh;
-  width: 100%;
-  background-color: #ffffff;
-  display: flex;
-  margin: 1% 0;
-  align-items: center;
-  justify-content: center;
-  gap: 3%;
-}
-
-/* offer boxes */
-.offer_box {
-  background-color: #cceeff;
-  width: 20vw;
-  height: 20vh;
-  display: flex;
-  align-items: center;
-  padding: 1% 1%;
-  box-sizing: border-box;
-  gap: 10%;
-}
-
-/* desctiption in offer */
-.offer_description {
-  flex: 1;
-  margin-left: 2vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* title in offer */
-.offer_description h2 {
-  font-size: 1.2vw;
-  font-weight: 900;
-  margin: 0 0 0.7em 0;
-  letter-spacing: 2px;
-}
-
-/* text in offer */
-.offer_text p {
-  font-size: 0.9rem;
-  margin: 0;
-  font-weight: 300;
-  line-height: 1.4;
-}
-
-/* blue bar with description of the company */
-#about{
-  background-color: #009dff;
-  height: 18vw;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  color: #ffffff;
-}
-
-#about p{
-  margin: 0 20%;
-  font-size: 0.9vw;
-}
-
-#about h2{
-  font-size: 1.3vw;
-}
-
-/* gallery with images */
-#gallery{
-  height: 50vh;
-  width: auto;
-  background-color: #ffffff;
-  display: flex;
-  gap: 3%;
-  margin: 0 20%;
-  justify-content: center;
-  align-items: center;
-}
-
-#gallery img{
-  /* max-width: 100%; */
-  max-height: auto;
-  width: 21vw;
-}
-
-/* product icons */
-#products_pic{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-#products_pic img{
-  gap: 1%;
-  width: 4vw;
-}
-
-/* description of product icons */
-#products_desc{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 14%;
-  text-align: center;
-  margin-top: 0.5%;
-  margin-bottom: 2%;
-  gap: 1.5%;
-}
-
-#products_desc section{
-  max-width: 25vw;
-  width: 6vw;
-  gap: 1%;
-  font-size: 0.7vw;
 }
 
 /* bar with brands and hr */
@@ -229,7 +103,7 @@ hr{
 /* black bar with contact info */
 #contact{
   display: flex;
-  justify-content: space- between;
+  justify-content: space-between;
   align-items: flex-start;
   text-align: left;
   background-color: #000000;
@@ -281,15 +155,15 @@ hr{
 .whatsappmenu{
   transition: color 0.2s;
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 
 .whatsappmenu:hover, .whatsappmenu:visited:hover {
-  color: #9b9b9b;
+  color: #474747;
 }
 
 .whatsappmenu:visited{
-  color: #000000;
+  color: #ffffff;
 }
 
 /* whatsapp link at the bottom */
@@ -311,15 +185,15 @@ hr{
 .mailmenu{
   transition: color 0.2s;
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 
 .mailmenu:hover, .mailmenu:visited:hover {
-  color: #9b9b9b;
+  color: #474747;
 }
 
 .mailmenu:visited{
-  color: #000000;
+  color: #ffffff;
 }
 
 /* mail link at the bottom */
@@ -337,6 +211,36 @@ hr{
   color: #009dff;
 }
 
+/* Offer site styles */
+.offer_section {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 3% 13%;
+}
+
+.offer_section p {
+  margin: 0 13%;
+}
+
+.offer_image_section {
+  height: 30vh;
+  margin: 3% 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1%;
+}
+
+.offer_image_section_picture {
+  height: 30vh;
+  width: 35vh;
+}
+
+.offer_image_section_picture img {
+    width: 100%;
+    height: 100%;
+}
+
 /* view for 4k monitors */
 @media (min-width: 2561px) and (max-width: 3840px){
   .above_menu {
@@ -348,81 +252,15 @@ hr{
     padding-top: 0.5%;
   }
 
-  .offer_box img{
-    width: 6vw;
-  }
-
-  .offer_box{
-    width: 23vw;
-  }
-
-  .offer_box h2{
-    font-size: 1.3vw;
-  }
-
-  .offer_box p{
-    font-size: 0.8vw;;
-  }
-
-  #about h2{
-    font-size: 1.3vw; 
-  }
-
-  #about p{
-    font-size: 0.9vw;
-  }
-
-  #gallery img{
-    width: 23vw;
-  }
-
-  #gallery{
-    margin: 10vh 0 10vh 0;
-  }
-
-  #products_pic{
-    gap: 2vw; 
-  }
-
-  #products_pic img{
-    width: 4.5vw;
-  }
-
-  #products_desc{
-    font-size: 0.6vw;
-    gap: 2%;
-  }
-
   #brands img{
     width: 10vw;
-  }
-
-  iframe{
-    height: 30vh;
   }
 }
 
 /* view for 1080px monitors */
 @media (min-width: 1850px) and (max-width: 1920px) {
-  #products_desc section{
-    font-size: 0.7vw;
-  }
-
   .above_menu {
     font-size: 0.9rem;
-  }
-
-  .offer_box{
-    width: 23vw;
-  }
-
-  #gallery img{
-    width: 23vw;
-  }
-
-  #gallery{
-    margin: 2vh 0 2vh 0;
-    height: 50vh;
   }
 
   #contact{
@@ -435,32 +273,6 @@ hr{
 }
 
 @media (min-width: 1025px) and (max-width: 1849px) {
-  #products_desc section{
-    font-size: 0.7vw !important;
-  }
-
-  .offer_text h2#palety-title,
-  .offer_text h2#boxy-title,
-  .offer_text h2#wielosztuki-title {
-    margin: 0 !important;
-  }
-
-  .offer_box img{
-    width: 7vw;
-  }
-
-  .offer_box{
-    width: 27vw;
-  }
-
-  #gallery img{
-    width: 27vw;
-  }
-
-  #gallery{
-    margin: 2vh 0 2vh 0;
-  }
-
   #contact{
     height: 12vh;
   }
@@ -491,7 +303,7 @@ hr{
     justify-content: flex-end;
     margin-right: 5vw;
     padding: 0.5%;
-    padding-top: 1.25%;
+    padding-top: 2.5%;
     font-size: 0.9rem;
   }
 
@@ -541,92 +353,6 @@ hr{
   .menu_right img {
     width: 3vw;
     margin: 0.5vw 0.5vw;
-    
-  }
-
-  #offer {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    gap: 3vw;
-    margin: 3vw 0 3vw 0;
-  }
-
-  .offer_box {
-    width: 30vw;
-    height: 18vh;
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-    gap: 4vw;
-    padding: 1.5vw 2vw;
-  }
-
-  .offer_box img{
-    max-width: 9vw;
-  }
-
-  .offer_text h2 {
-    font-size: 2vw !important;
-  }
-
-  .offer_text p {
-    font-size: 1.2vw !important;
-  }
-
-  #about {
-    height: auto;
-    padding: 2vw 5vw;
-  }
-
-  #about p {
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 1.7vw;
-  }
-
-  #about h2 {
-    font-size: 2vw;
-  }
-
-  #gallery {
-    flex-wrap: nowrap;
-    gap: 2vw;
-    padding: 1vh 3vw;
-    height: 32vh;
-    margin: 0;
-  }
-
-  #gallery img {
-    width: 31vw;
-    margin: 0;
-  }
-
-  #products_pic,
-  #products_desc {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2vw;
-    margin: 1vh 10%;
-  }
-
-  #products_desc{
-    margin: 1vh;
-    gap: 2vw;
-  }
-
-  #products_pic img,
-  #products_desc section {
-    max-width: 7vw;
-    width: 6.5vw;
-    text-align: center;
-  }
-
-  #products_desc section {
-    font-size: 1vw;
-    margin-bottom: 2vw;
   }
 
   #brands {
@@ -676,6 +402,10 @@ hr{
     width: 2vw;
     padding: 1vw;
   }
+
+  .offer_image_section {
+    margin: 0 5%;
+  }
 }
 
 /* mobile view for smartphones*/
@@ -686,7 +416,7 @@ hr{
 
   header {
     height: 70vh;
-    background-size:auto ; 
+    background-size: auto; 
   }
 
   .above_menu {
@@ -699,8 +429,6 @@ hr{
     gap: 2vw 0.5vw;
     height: auto;
     padding: 3vw 0;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
     height: 55vh;
     font-size: 2vw;
   }
@@ -741,76 +469,6 @@ hr{
     margin: 0 1vw;
   }
 
-  #offer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    gap: 6vw;
-    margin: 6vw 0 6vw 0;
-  }
-  .offer_box {
-    width: 92vw;
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 2vw;
-    padding: 7vw 3vw;
-  }
-
-  .offer_image img {
-    width: 22vw;
-    max-width: 120px;
-    height: auto;
-    display: block;
-    margin: 0 auto 2vw auto;
-  }
-
-  .offer_text h2 {
-    font-size: 8vw !important;
-    margin-top: 0;
-    margin-bottom: 1vh;
-  }
-
-  .offer_text p {
-    font-size: 4vw !important;
-  }
-
-  #about {
-    height: auto;
-    padding: 6vw 0;
-  }
-
-  #about p {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    font-size: 3.5vw;
-  }
-
-  #about h2 {
-    font-size: 5vw;
-  }
-
-  #gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 4vw;
-    padding: 0;
-    height: 90vh;
-    margin-bottom: 0;
-  }
-
-  #gallery img {
-    width: 70vw;
-    margin: 0;
-  }
-
-  #products_pic,
-  #products_desc{
-    display: none;
-  }
-  
   #brands {
     flex-direction: column;
     align-items: center;
@@ -820,18 +478,10 @@ hr{
     max-width: 100%;
   }
 
-  #products_pic img,
-  #products_desc section,
   #brands img {
     max-width: 44vw;
     width: 30vw !important;
     text-align: center;
-  }
-  
-  #products_desc section {
-    font-size: 3.5vw;
-    margin-bottom: 3vw;
-    width: 60vw !important;
   }
 
   #contact {
@@ -871,7 +521,24 @@ hr{
     padding: 2vw;
   }
   
-  #map, #brands, #contact {
+  #brands, #contact {
     padding-bottom: 3vw;
   }
+
+  .offer_image_section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80vw;;
+    margin: 0 10%;
+  }
+
+  .offer_image_section_picture {
+    width: 80vw;
+  }
+
+  .offer_section h1 {
+    font-size: 2rem;
+  }
+  
 }
