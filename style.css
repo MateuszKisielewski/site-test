@@ -434,7 +434,7 @@ hr{
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1849px) {
+@media (min-width: 1451px) and (max-width: 1849px) {
   #products_desc section{
     font-size: 0.7vw !important;
   }
@@ -443,6 +443,10 @@ hr{
   .offer_text h2#boxy-title,
   .offer_text h2#wielosztuki-title {
     margin: 0 !important;
+  }
+
+  #offer {
+    height: 30vh;
   }
 
   .offer_box img{
@@ -458,11 +462,57 @@ hr{
   }
 
   #gallery{
-    margin: 2vh 0 2vh 0;
+    margin: 2vh 0;
+    height: 45vh;
   }
 
   #contact{
     height: 12vh;
+  }
+
+  #brands{
+    margin: 2vw 6vw;
+  }
+
+  #brands img{
+    width: 10vw;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1450px) {
+  #products_desc section{
+    font-size: 0.7vw !important;
+  }
+
+  .offer_text h2#palety-title,
+  .offer_text h2#boxy-title,
+  .offer_text h2#wielosztuki-title {
+    margin: 0 !important;
+  }
+
+  #offer {
+    height: 30vh;
+  }
+
+  .offer_box img{
+    width: 7vw;
+  }
+
+  .offer_box{
+    width: 27vw;
+  }
+
+  #gallery img{
+    width: 27vw;
+  }
+
+  #gallery{
+    margin: 2vh 0;
+    height: 35vh;
+  }
+
+  #contact{
+    height: 9vh;
   }
 
   #brands{
@@ -505,6 +555,18 @@ hr{
     gap: 2vw;
     background-color: #009dff;
     opacity: 0.9;
+  }
+
+  #palety-title {
+    margin: 0;
+  }
+
+  #wielosztuki-title {
+    margin: 0;
+  }
+
+  #boxy-title {
+    margin: 0;
   }
 
   .menu_left, .menu_center, .menu_right {
@@ -593,8 +655,8 @@ hr{
   #gallery {
     flex-wrap: nowrap;
     gap: 2vw;
-    padding: 1vh 3vw;
-    height: 32vh;
+    padding: 0 3vw;
+    height: 22vh;
     margin: 0;
   }
 

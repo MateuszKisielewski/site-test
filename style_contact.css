@@ -282,9 +282,23 @@ hr{
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1849px) {
+@media (min-width: 1451px) and (max-width: 1849px) {
   #contact{
     height: 12vh;
+  }
+
+  #brands{
+    margin: 2vw 6vw;
+  }
+
+  #brands img{
+    width: 10vw;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1450px) {
+  #contact{
+    height: 9vh;
   }
 
   #brands{
