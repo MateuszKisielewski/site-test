@@ -163,6 +163,45 @@
             });
         }
     </script>
+
+    <script>
+// Wczytaj dane z CMS
+fetch('/content/offer.json')
+  .then(r => r.json())
+  .then(data => {
+    // Palety
+    document.querySelectorAll('.offer_section h1')[0].textContent = data.palety.title;
+    document.querySelectorAll('.offer_section p')[0].textContent = data.palety.description;
+    document.querySelectorAll('.offer_image_section')[0].querySelectorAll('img').forEach((img, i) => {
+      if (data.palety.images[i]) {
+        img.src = data.palety.images[i].url;
+        img.alt = data.palety.images[i].alt || '';
+      }
+    });
+
+    // Boxy
+    document.querySelectorAll('.offer_section h1')[1].textContent = data.boxy.title;
+    document.querySelectorAll('.offer_section p')[1].textContent = data.boxy.description;
+    document.querySelectorAll('.offer_image_section')[1].querySelectorAll('img').forEach((img, i) => {
+      if (data.boxy.images[i]) {
+        img.src = data.boxy.images[i].url;
+        img.alt = data.boxy.images[i].alt || '';
+      }
+    });
+
+    // Wielosztuki
+    document.querySelectorAll('.offer_section h1')[2].textContent = data.wielosztuki.title;
+    document.querySelectorAll('.offer_section p')[2].textContent = data.wielosztuki.description;
+    document.querySelectorAll('.offer_image_section')[2].querySelectorAll('img').forEach((img, i) => {
+      if (data.wielosztuki.images[i]) {
+        img.src = data.wielosztuki.images[i].url;
+        img.alt = data.wielosztuki.images[i].alt || '';
+      }
+    });
+  })
+  .catch(err => console.error('Błąd wczytywania offer.json:', err));
+</script>
+
 </body>
 
 </html>
