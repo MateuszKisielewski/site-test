@@ -65,11 +65,20 @@
                 produktami: <br> Costway, Kesser, Ali/Temu, zabawki, Woltu, Homcom, FFeurope, DWD Company, Eglo, Amazon,
                 zwierzak, AGD</p>
         </section>
-        <section class="offer_image_section">
-            <section class="offer_image_section_picture"><img src="images/photos/palety1.jpeg" alt=""></section>
-            <section class="offer_image_section_picture"><img src="images/photos/palety2.jpeg" alt=""></section>
-            <section class="offer_image_section_picture"><img src="images/photos/palety3.jpeg" alt=""></section>
-        </section>
+
+        <div class="slideshow-container">
+            <section class="offer_image_section" id="palety-gallery">
+                <section class="offer_image_section_picture"><img src="images/photos/palety1.jpeg" alt=""></section>
+                <section class="offer_image_section_picture"><img src="images/photos/palety2.jpeg" alt=""></section>
+                <section class="offer_image_section_picture"><img src="images/photos/palety3.jpeg" alt=""></section>
+                <section class="offer_image_section_picture"><img src="images/photos/palety4.jpeg" alt=""></section>
+                <section class="offer_image_section_picture"><img src="images/photos/palety5.jpeg" alt=""></section>
+                <section class="offer_image_section_picture"><img src="images/photos/palety6.jpeg" alt=""></section>
+            </section>
+
+            <a class="prev" onclick="moveSlides(-1, 'palety-gallery')">&#10094;</a>
+            <a class="next" onclick="moveSlides(1, 'palety-gallery')">&#10095;</a>
+        </div>
 
         <section class="offer_section">
             <h1>BOXY / PALETOBOXY</h1>
@@ -80,11 +89,20 @@
                 produktów. <br> Obecnie w naszej ofercie dostępne są palety z następującymi produktami: <br> Ali/Temu,
                 elektronika, zabawki, Lucky7</p>
         </section>
-        <section class="offer_image_section">
-            <section class="offer_image_section_picture"><img src="images/photos/boxy1.jpeg" alt=""></section>
-            <section class="offer_image_section_picture"><img src="images/photos/boxy2.jpeg" alt=""></section>
-            <section class="offer_image_section_picture"><img src="images/photos/boxy3.jpeg" alt=""></section>
-        </section>
+
+        <div class="slideshow-container">
+            <section class="offer_image_section" id="boxy-gallery">
+                <section class="offer_image_section_picture"><img src="images/photos/boxy1.jpeg" alt=""></section>
+                <section class="offer_image_section_picture"><img src="images/photos/boxy2.jpeg" alt=""></section>
+                <section class="offer_image_section_picture"><img src="images/photos/boxy3.jpeg" alt=""></section>
+                <section class="offer_image_section_picture"><img src="images/photos/boxy4.jpeg" alt=""></section>
+                <section class="offer_image_section_picture"><img src="images/photos/boxy5.jpeg" alt=""></section>
+                <section class="offer_image_section_picture"><img src="images/photos/boxy6.jpeg" alt=""></section>
+            </section>
+
+            <a class="prev" onclick="moveSlides(-1, 'boxy-gallery')">&#10094;</a>
+            <a class="next" onclick="moveSlides(1, 'boxy-gallery')">&#10095;</a>
+        </div>
 
         <section class="offer_section">
             <h1>WIELOSZTUKI KLASA A</h1>
@@ -95,11 +113,23 @@
                 konkurencyjne ceny oraz regularną dostępność towaru. <br> Dostepne są wielosztuki z przykładowymi
                 produktami, takimi jak: <br> Hokery, odkurzaczem frytkownice, szafki łazienkowe.</p>
         </section>
-        <section class="offer_image_section">
-            <section class="offer_image_section_picture"><img src="images/photos/wielosztuki1.jpg" alt=""></section>
-            <section class="offer_image_section_picture"><img src="images/photos/wielosztuki2.jpg" alt=""></section>
-            <section class="offer_image_section_picture"><img src="images/photos/wielosztuki3.jpg" alt=""></section>
-        </section>
+
+        <div class="slideshow-container">
+            <section class="offer_image_section" id="wielosztuki-gallery">
+                <section class="offer_image_section_picture"><img src="images/photos/wielosztuki1.jpg" alt=""></section>
+                <section class="offer_image_section_picture"><img src="images/photos/wielosztuki2.jpg" alt=""></section>
+                <section class="offer_image_section_picture"><img src="images/photos/wielosztuki3.jpg" alt=""></section>
+                <section class="offer_image_section_picture"><img src="images/photos/wielosztuki4.jpeg" alt="">
+                </section>
+                <section class="offer_image_section_picture"><img src="images/photos/wielosztuki5.jpeg" alt="">
+                </section>
+                <section class="offer_image_section_picture"><img src="images/photos/wielosztuki6.jpeg" alt="">
+                </section>
+            </section>
+
+            <a class="prev" onclick="moveSlides(-1, 'wielosztuki-gallery')">&#10094;</a>
+            <a class="next" onclick="moveSlides(1, 'wielosztuki-gallery')">&#10095;</a>
+        </div>
 
         <hr>
         <div id="brands">
@@ -150,7 +180,7 @@
     </main>
 
     <script src="https://kit.fontawesome.com/5f04c6bd2d.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="script_offer.js"></script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
         if (window.netlifyIdentity) {

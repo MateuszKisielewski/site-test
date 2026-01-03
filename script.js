@@ -116,9 +116,48 @@ async function loadGallery() {
     }
 }
 
+let galleryIndex = 0;
+
+function initMainGallery() {
+    galleryIndex = 0;
+    showGallerySlides();
+}
+
+function moveGallerySlides(n) {
+    let galleryItems = document.querySelectorAll('#gallery .gallery-item');
+    let totalItems = galleryItems.length;
+
+    if (totalItems <= 3) return;
+
+    galleryIndex += n;
+
+    if (galleryIndex > totalItems - 3) {
+        galleryIndex = 0;
+    }
+    if (galleryIndex < 0) {
+        galleryIndex = totalItems - 3;
+    }
+
+    showGallerySlides();
+}
+
+function showGallerySlides() {
+    let galleryItems = document.querySelectorAll('#gallery .gallery-item');
+    let startIndex = galleryIndex;
+
+    galleryItems.forEach(item => {
+        item.classList.remove('active');
+    });
+
+    for (let i = 0; i < 3 && (startIndex + i) < galleryItems.length; i++) {
+        galleryItems[startIndex + i].classList.add('active');
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     loadHeroBanners();
     loadOffer();
     loadAbout();
     loadGallery();
+    initMainGallery();
 });

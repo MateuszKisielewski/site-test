@@ -53,7 +53,7 @@
         <nav id="menu">
             <div class="menu_left"><a href="index.html"><img src="images/logo/logo.png" class="logo"></a></div>
             <div class="menu_center">
-                <a href="#offer">O NAS</a>
+                <a href="#wielosztuki-title">O NAS</a>
                 <a href="offer.html">OFERTA</a>
                 <a href="#about">GALERIA</a>
                 <a href="contact.html">KONTAKT</a>
@@ -108,10 +108,18 @@
                 co gwarantuje stałą dostępność nowego towaru.</p>
         </div>
 
-        <div id="gallery">
-            <img src="images/photos/glowna1.jpeg">
-            <img src="images/photos/glowna2.jpeg">
-            <img src="images/photos/glowna3.jpeg">
+        <div class="gallery-slideshow-container">
+            <div id="gallery">
+                <img src="images/photos/glowna1.jpeg" class="gallery-item">
+                <img src="images/photos/glowna2.jpeg" class="gallery-item">
+                <img src="images/photos/glowna3.jpeg" class="gallery-item">
+                <img src="images/photos/palety1.jpeg" class="gallery-item">
+                <img src="images/photos/boxy8.jpeg" class="gallery-item">
+                <img src="images/photos/wielosztuki1.jpg" class="gallery-item">
+            </div>
+
+            <a class="gallery-prev" onclick="moveGallerySlides(-1)">&#10094;</a>
+            <a class="gallery-next" onclick="moveGallerySlides(1)">&#10095;</a>
         </div>
 
         <div id="products_pic">
